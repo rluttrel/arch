@@ -10,7 +10,7 @@ echo "-----------------------------"
 echo "Enter the termux ip address : "
 read termux_ip
 echo "Termux ip address is ${termux_ip}"
-echo "sshuttle -r ${termux_user}@${termux_ip}:8022 0/0 -x ${my_ip}"
+echo "sshuttle -r ${termux_user}@${termux_ip}:8022 0/0 -x ${my_ip}/24"
 
 
-sshuttle -r ${termux_user}@${termux_ip}:8022 0/0 -x ${my_ip}
+sshuttle -r ${termux_user}@${termux_ip}:8022 0/0 -x ${my_ip}/24
